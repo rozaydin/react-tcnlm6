@@ -1,9 +1,10 @@
-import React from "react";
-import { useEffect, useState } from "react";
-import "./style.css";
+import React from 'react';
+import './App.css';
+import { useEffect, useState } from 'react';
+import './style.css';
 
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
 export default function App() {
   const currentDate = new Date();
@@ -12,7 +13,7 @@ export default function App() {
 
   useEffect(() => {
     setMaxDate(new Date(maxDateString));
-  }, [maxDateString]);  
+  }, [maxDateString]);
 
   const handleChange = (event) => {
     setMaxDateString(event.target.value);
@@ -43,7 +44,7 @@ export default function App() {
 
       <div className="block">
         <DatePicker minDate={new Date()} maxDate={maxDate}></DatePicker>
-      </div>      
+      </div>
     </section>
   );
 }
