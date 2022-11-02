@@ -1,0 +1,36 @@
+.App {
+  min-width: 400px;
+  min-height: 400px;
+  border: 1px solid black;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.label {
+  margin: 12px;
+  text-align: center;
+  font-size: larger;
+  font-weight: 500;
+  height: 48px;
+  line-height: 48px;
+  color: #0b0b0b;
+  background-color: #dcdcdc;
+  width: 90%;
+  border-radius: 2px;
+}
+
+input {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.block {
+  min-width: 90%;
+  height: 48px;
+  line-height: 48px;
+}
